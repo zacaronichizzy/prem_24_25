@@ -11,7 +11,6 @@ const pool = new Pool({
   user: 'zacharychisholm',
   host: 'localhost',
   database: 'prem',
-  password: 'your_password',
   port: 5432,
 });
 
