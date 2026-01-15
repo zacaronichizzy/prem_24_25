@@ -32,10 +32,8 @@ app.get('/', (req, res) => {
 app.get('/table', async (req, res) => {
   try {
     const date = req.query.date || '2025-01-14'; // Default to today if no date provided
-    
-    // Your SQL query here - this is a basic example
-    // You'll need to adapt this to match your database structure
-    const query = `
+
+    const full_table_query = `
         SELECT
             teams.team_name AS team,
             COUNT(*) AS played,
@@ -83,12 +81,67 @@ app.get('/table', async (req, res) => {
         GROUP BY teams.team_id
         ORDER BY points DESC, goal_difference DESC, goals_for DESC;
     `;
+
+    const london_table_query = `
+        SELECT
+            teams.team_name AS london_team,
+            COUNT(*) AS played,
+            SUM(wins) AS wins,
+            SUM(draws) AS draws,
+            SUM(losses) AS losses,
+            SUM(goals_for) AS goals_for,
+            SUM(goals_against) AS goals_against,
+            SUM(goals_for) - SUM(goals_against) AS goal_difference,
+            SUM(points) AS points
+        FROM teams
+        INNER JOIN (
+            SELECT
+                home_id AS team_id,
+                CASE
+                    WHEN home_score > away_score THEN 3
+                    WHEN home_score = away_score THEN 1
+                    ELSE 0
+                END AS points,
+                CASE WHEN home_score > away_score THEN 1 ELSE 0 END AS wins,
+                CASE WHEN home_score = away_score THEN 1 ELSE 0 END AS draws,
+                CASE WHEN home_score < away_score THEN 1 ELSE 0 END AS losses,
+                home_score AS goals_for,
+                away_score AS goals_against
+            FROM fixtures
+            WHERE fixture_time <= $1
+                AND home_id IN (1, 4, 6, 7, 9, 18, 19)
+                AND away_id IN (1, 4, 6, 7, 9, 18, 19)
+
+            UNION ALL
+
+            SELECT
+                away_id AS team_id,
+                CASE
+                    WHEN home_score < away_score THEN 3
+                    WHEN home_score = away_score THEN 1
+                    ELSE 0
+                END AS points,
+                CASE WHEN away_score > home_score THEN 1 ELSE 0 END AS wins,
+                CASE WHEN away_score = home_score THEN 1 ELSE 0 END AS draws,
+                CASE WHEN away_score < home_score THEN 1 ELSE 0 END AS losses,
+                away_score AS goals_for,
+                home_score AS goals_against
+            FROM fixtures
+            WHERE fixture_time <= $1
+                AND home_id IN (1, 4, 6, 7, 9, 18, 19)
+                AND away_id IN (1, 4, 6, 7, 9, 18, 19)
+        ) AS team_games ON teams.team_id = team_games.team_id
+        GROUP BY teams.team_id
+        ORDER BY points DESC, goal_difference DESC, goals_for DESC;
+    `;
     
-    const result = await pool.query(query, [date]);
+    const full_table_result = await pool.query(full_table_query, [date]);
+    const london_table_result = await pool.query(london_table_query, [date]);
     
     // Render the table
     res.render('table', { 
-      standings: result.rows,
+      full_standings: full_table_result.rows,
+      london_standings: london_table_result.rows,
       date: date
     });
     

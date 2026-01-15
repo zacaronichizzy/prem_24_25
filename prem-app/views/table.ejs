@@ -76,10 +76,43 @@
       </tr>
     </thead>
     <tbody>
-      <% standings.forEach((team, index) => { %>
+      <% full_standings.forEach((team, index) => { %>
         <tr>
           <td class="position"><%= index + 1 %></td>
           <td><%= team.team %></td>
+          <td><%= team.played %></td>
+          <td><%= team.wins %></td>
+          <td><%= team.draws %></td>
+          <td><%= team.losses %></td>
+          <td><%= team.goals_for %></td>
+          <td><%= team.goals_against %></td>
+          <td><%= team.goal_difference %></td>
+          <td><strong><%= team.points %></strong></td>
+        </tr>
+      <% }); %>
+    </tbody>
+  </table>
+
+  <table>
+    <thead>
+      <tr>
+        <th class="position">Pos</th>
+        <th>Team</th>
+        <th>P</th>
+        <th>W</th>
+        <th>D</th>
+        <th>L</th>
+        <th>GF</th>
+        <th>GA</th>
+        <th>GD</th>
+        <th>Pts</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% london_standings.forEach((team, index) => { %>
+        <tr>
+          <td class="position"><%= index + 1 %></td>
+          <td><%= team.london_team %></td>
           <td><%= team.played %></td>
           <td><%= team.wins %></td>
           <td><%= team.draws %></td>
