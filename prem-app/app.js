@@ -62,7 +62,7 @@ app.get('/table', async (req, res) => {
                 home_score AS goals_for,
                 away_score AS goals_against
             FROM fixtures
-            WHERE fixture_time <= '2025-05-01 00:00:00'
+            WHERE fixture_time <= $1
 
             UNION ALL
 
@@ -79,7 +79,7 @@ app.get('/table', async (req, res) => {
                 away_score AS goals_for,
                 home_score AS goals_against
             FROM fixtures
-            WHERE fixture_time <= '2025-05-01 00:00:00'
+            WHERE fixture_time <= $1
         ) AS team_games ON teams.team_id = team_games.team_id
         GROUP BY teams.team_id
         ORDER BY points DESC, goal_difference DESC, goals_for DESC;
