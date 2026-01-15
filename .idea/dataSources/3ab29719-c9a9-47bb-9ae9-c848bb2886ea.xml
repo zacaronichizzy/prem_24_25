@@ -3,7 +3,7 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.54">
     <root id="1">
       <DateStyle>mdy</DateStyle>
-      <IntrospectionStateNumber>1280</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1495</IntrospectionStateNumber>
       <ServerVersion>17.7</ServerVersion>
       <StartupTime>1766058117</StartupTime>
       <TimeZones>true ACDT
@@ -802,7 +802,7 @@ false Zulu
 13582||10|C|G
 13582||-9223372036854775808|U|G
 13582||10|U|G</Grants>
-      <IntrospectionStateNumber>920</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1492</IntrospectionStateNumber>
       <ObjectId>5</ObjectId>
       <OwnerName>zacharychisholm</OwnerName>
     </database>
@@ -816,7 +816,7 @@ false Zulu
 13582||10|C|G
 13582||-9223372036854775808|U|G
 13582||10|U|G</Grants>
-      <IntrospectionStateNumber>1280</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1495</IntrospectionStateNumber>
       <ObjectId>16389</ObjectId>
       <OwnerName>zacharychisholm</OwnerName>
     </database>
@@ -7600,21 +7600,21 @@ false Zulu
       <AutoIntrospectionLevel>3</AutoIntrospectionLevel>
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <LastIntrospectionL1Xid>1280</LastIntrospectionL1Xid>
-      <LastIntrospectionL2Xid>1280</LastIntrospectionL2Xid>
-      <LastIntrospectionL3Xid>1280</LastIntrospectionL3Xid>
+      <LastIntrospectionL1Xid>1495</LastIntrospectionL1Xid>
+      <LastIntrospectionL2Xid>1495</LastIntrospectionL2Xid>
+      <LastIntrospectionL3Xid>1495</LastIntrospectionL3Xid>
       <LastIntrospectionLevel>3</LastIntrospectionLevel>
-      <LastIntrospectionLocalTimestamp>2026-01-12.13:28:26</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2026-01-15.11:25:37</LastIntrospectionLocalTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>531</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
     </schema>
     <sequence id="510" parent="509" name="teams_team_id_seq">
       <DetailsLevel>2</DetailsLevel>
-      <ObjectId>16885</ObjectId>
+      <ObjectId>17065</ObjectId>
       <SequenceIdentity>1</SequenceIdentity>
       <StartValue>1</StartValue>
-      <StateNumber>1272</StateNumber>
+      <StateNumber>1459</StateNumber>
       <StoredType>smallint|0s</StoredType>
       <OwnerName>zacharychisholm</OwnerName>
     </sequence>

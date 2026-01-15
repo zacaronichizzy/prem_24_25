@@ -45,8 +45,7 @@ app.get('/table', async (req, res) => {
             SUM(goals_for) AS goals_for,
             SUM(goals_against) AS goals_against,
             SUM(goals_for) - SUM(goals_against) AS goal_difference,
-            SUM(points) AS points,
-            ROUND(SUM(points)::DECIMAL / COUNT(*), 2) AS ppg
+            SUM(points) AS points
         FROM teams
         INNER JOIN (
             SELECT
