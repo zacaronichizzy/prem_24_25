@@ -156,6 +156,9 @@ CREATE TABLE mw_fixtures AS
         ON fixtures.home_id = matchweek.home_id
         AND fixtures.away_id = matchweek.away_id;
 
+-- Drop the matchweek table, we'll never use it
+DROP TABLE matchweek;
+
 
 
 
