@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40b9d16d-0e13-4158-af1c-0971f9a3ceb7" name="Changes" comment="Added date variable">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="40b9d16d-0e13-4158-af1c-0971f9a3ceb7" name="Changes" comment="Dropped matchweek table">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3ab29719-c9a9-47bb-9ae9-c848bb2886ea.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/3ab29719-c9a9-47bb-9ae9-c848bb2886ea.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/data_source_mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/queries/prem_raw_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/queries/prem_raw_data.sql" afterDir="false" />
     </list>
@@ -115,6 +115,7 @@
     <MESSAGE value="Should have .xml files back now?" />
     <MESSAGE value=".xml stuff" />
     <MESSAGE value="Added date variable" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added date variable" />
+    <MESSAGE value="Dropped matchweek table" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dropped matchweek table" />
   </component>
 </project>

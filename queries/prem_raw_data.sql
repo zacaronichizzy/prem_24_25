@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS fixtures (
 
 -- Import data
 COPY fixtures
-FROM '/data/prem_24_25_fixtures.csv'
+FROM '/Users/zacharychisholm/Downloads/prem_24_25_fixtures.csv'
 DELIMITER ',' CSV HEADER;
 
 -- Get rid of unnecessary columns
@@ -107,7 +107,7 @@ CREATE TABLE IF NOT EXISTS matchweek (
 
 -- Import matchweek data
 COPY matchweek
-FROM '/data/epl-2024-GMTStandardTime.csv'
+FROM '/Users/zacharychisholm/Downloads/epl-2024-GMTStandardTime.csv'
 DELIMITER ',' CSV HEADER;
 
 -- Convert team names to team IDs (alphabetical order is in line with ID ordering)
@@ -155,9 +155,6 @@ CREATE TABLE mw_fixtures AS
     LEFT JOIN matchweek
         ON fixtures.home_id = matchweek.home_id
         AND fixtures.away_id = matchweek.away_id;
-
--- Drop the matchweek table, we'll never use it
-DROP TABLE matchweek;
 
 
 
