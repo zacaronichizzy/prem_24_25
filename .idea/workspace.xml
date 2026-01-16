@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40b9d16d-0e13-4158-af1c-0971f9a3ceb7" name="Changes" comment="Dropped matchweek table">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3ab29719-c9a9-47bb-9ae9-c848bb2886ea.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/3ab29719-c9a9-47bb-9ae9-c848bb2886ea.xml" afterDir="false" />
+    <list default="true" id="40b9d16d-0e13-4158-af1c-0971f9a3ceb7" name="Changes" comment="Reintroduce matchweek table; change path (definitely incorrect but just for now)">
       <change beforePath="$PROJECT_DIR$/.idea/data_source_mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/queries/prem_raw_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/queries/prem_raw_data.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +49,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
+    "database.data.extractors.current.export.id": "SQL Inserts",
     "datagrid.heatmap.switchedByDefault": "false",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/zacharychisholm/DataGripProjects/prem_table/queries",
@@ -116,6 +115,7 @@
     <MESSAGE value=".xml stuff" />
     <MESSAGE value="Added date variable" />
     <MESSAGE value="Dropped matchweek table" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dropped matchweek table" />
+    <MESSAGE value="Reintroduce matchweek table; change path (definitely incorrect but just for now)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reintroduce matchweek table; change path (definitely incorrect but just for now)" />
   </component>
 </project>

@@ -3,6 +3,10 @@
   <component name="DataSourcePerFileMappings">
     <file url="file://$PROJECT_DIR$/queries/prem_raw_data.sql" value="3ab29719-c9a9-47bb-9ae9-c848bb2886ea" />
     <file url="file://$PROJECT_DIR$/queries/prem_table_24_25.sql" value="3ab29719-c9a9-47bb-9ae9-c848bb2886ea" />
+    <file url="file://$USER_HOME$/Downloads/prem_data/fixtures_exp.sql" value="2f128dbc-ebb0-43ca-a24b-da44e68f3722" />
+    <file url="file://$USER_HOME$/Downloads/prem_data/matchweek_exp.sql" value="2f128dbc-ebb0-43ca-a24b-da44e68f3722" />
+    <file url="file://$USER_HOME$/Downloads/prem_data/mw_fixtures_exp.sql" value="2f128dbc-ebb0-43ca-a24b-da44e68f3722" />
+    <file url="file://$USER_HOME$/Downloads/prem_data/teams_exp.sql" value="2f128dbc-ebb0-43ca-a24b-da44e68f3722" />
     <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/2f128dbc-ebb0-43ca-a24b-da44e68f3722/console.sql" value="2f128dbc-ebb0-43ca-a24b-da44e68f3722" />
     <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/3ab29719-c9a9-47bb-9ae9-c848bb2886ea/console.sql" value="3ab29719-c9a9-47bb-9ae9-c848bb2886ea" />
     <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/3ab29719-c9a9-47bb-9ae9-c848bb2886ea/console_1.sql" value="3ab29719-c9a9-47bb-9ae9-c848bb2886ea" />
