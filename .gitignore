@@ -1,5 +1,7 @@
 # IDE and Editor Files
 .idea/
+data/
+prem-app/node_modules/
 .vscode/
 *.swp
 *.swo
