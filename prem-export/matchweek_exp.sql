@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS matchweek (
     result VARCHAR,
     home_id INTEGER,
     away_id INTEGER
-)
+);
 
 ALTER TABLE matchweek
     ADD CONSTRAINT fk_home_id
