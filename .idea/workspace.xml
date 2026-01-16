@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40b9d16d-0e13-4158-af1c-0971f9a3ceb7" name="Changes" comment="Reintroduce matchweek table; change path (definitely incorrect but just for now)">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="40b9d16d-0e13-4158-af1c-0971f9a3ceb7" name="Changes" comment="Add folder(?)">
+      <change beforePath="$PROJECT_DIR$/.idea/prem_table.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prem_table.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +15,7 @@
   <component name="Git.Settings">
     <branch-grouping />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -114,6 +115,7 @@
     <MESSAGE value="Added date variable" />
     <MESSAGE value="Dropped matchweek table" />
     <MESSAGE value="Reintroduce matchweek table; change path (definitely incorrect but just for now)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reintroduce matchweek table; change path (definitely incorrect but just for now)" />
+    <MESSAGE value="Add folder(?)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add folder(?)" />
   </component>
 </project>
