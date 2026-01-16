@@ -1,7 +1,7 @@
 const express = require('express');
 const { Pool } = require('pg');
 const pool = new Pool({
-  connectionString: process.env.postgresql:DATABASE_URL,
+  connectionString: process.env.DATABASE_URL,
   ssl: {
     rejectUnauthorized: false
   }
