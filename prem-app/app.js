@@ -1,5 +1,11 @@
 const express = require('express');
 const { Pool } = require('pg');
+const pool = new Pool({
+  connectionString: process.env.postgresql:DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false
+  }
+});
 const app = express();
 const port = 3000;
 
