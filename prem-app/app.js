@@ -1,11 +1,5 @@
 const express = require('express');
 const { Pool } = require('pg');
-const pool = new Pool({
-  connectionString: process.env.DATABASE_URL,
-  ssl: {
-    rejectUnauthorized: false
-  }
-});
 const app = express();
 const port = 3000;
 
@@ -14,10 +8,10 @@ app.set('view engine', 'ejs');
 
 // PostgreSQL connection
 const pool = new Pool({
-  user: 'zacharychisholm',
-  host: 'localhost',
-  database: 'prem',
-  port: 5432,
+  connectionString: process.env.DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false
+  }
 });
 
 // Test database connection
