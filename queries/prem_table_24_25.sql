@@ -420,7 +420,7 @@ INNER JOIN (
 GROUP BY teams.team_id
 ORDER BY points DESC, goal_difference DESC, goals_for DESC;
 
--- Points by matchweek (for visualisation; see 24-25_race.R)
+-- Points by matchweek (for visualisation; see 24_25_race.R)
 SELECT
     teams.team_name AS team,
     SUM(points) OVER (PARTITION BY team_games.team_id ORDER BY mw) AS running_total
