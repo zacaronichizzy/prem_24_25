@@ -1,3 +1,8 @@
+CREATE TABLE IF NOT EXISTS teams (
+    team_id SMALLSERIAL PRIMARY KEY,
+    team_name VARCHAR NOT NULL
+);
+
 INSERT INTO public.teams (team_id, team_name) VALUES (1, 'Arsenal');
 INSERT INTO public.teams (team_id, team_name) VALUES (2, 'Aston Villa');
 INSERT INTO public.teams (team_id, team_name) VALUES (3, 'Bournemouth');

@@ -1,3 +1,23 @@
+CREATE TABLE IF NOT EXISTS fixtures (
+    fixture_id INTEGER PRIMARY KEY,
+    referee VARCHAR,
+    home_score INTEGER,
+    away_score INTEGER,
+    home_id INTEGER,
+    away_id INTEGER,
+    fixture_time TIMESTAMP
+);
+
+ALTER TABLE fixtures
+    ADD CONSTRAINT fk_home_id
+        FOREIGN KEY (home_id) REFERENCES teams (team_id),
+    ADD CONSTRAINT fk_away_id
+        FOREIGN KEY (away_id) REFERENCES teams (team_id);
+
+ALTER TABLE fixtures
+    ALTER COLUMN home_id SET NOT NULL,
+    ALTER COLUMN away_id SET NOT NULL;
+
 INSERT INTO public.fixtures (fixture_id, referee, home_score, away_score, home_id, away_id, fixture_time) VALUES (14662, 'Craig Pawson', 0, 1, 1, 19, '2025-02-22 15:00:00.000000');
 INSERT INTO public.fixtures (fixture_id, referee, home_score, away_score, home_id, away_id, fixture_time) VALUES (14547, 'Darren Bond', 1, 2, 17, 1, '2025-05-25 16:00:00.000000');
 INSERT INTO public.fixtures (fixture_id, referee, home_score, away_score, home_id, away_id, fixture_time) VALUES (14653, 'Andy Madley', 0, 0, 16, 1, '2025-02-26 19:30:00.000000');

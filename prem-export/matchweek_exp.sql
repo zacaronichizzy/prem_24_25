@@ -1,3 +1,23 @@
+CREATE TABLE IF NOT EXISTS matchweek (
+    match_no INTEGER,
+    mw INTEGER,
+    date VARCHAR,
+    location VARCHAR,
+    result VARCHAR,
+    home_id INTEGER,
+    away_id INTEGER
+)
+
+ALTER TABLE matchweek
+    ADD CONSTRAINT fk_home_id
+        FOREIGN KEY (home_id) REFERENCES teams (team_id),
+    ADD CONSTRAINT fk_away_id
+        FOREIGN KEY (away_id) REFERENCES teams (team_id);
+
+ALTER TABLE matchweek
+    ALTER COLUMN home_id SET NOT NULL,
+    ALTER COLUMN away_id SET NOT NULL;
+
 INSERT INTO public.matchweek (match_no, mw, date, location, result, home_id, away_id) VALUES (211, 22, '18/01/2025 17:30', 'Emirates Stadium', '2 - 2', 1, 2);
 INSERT INTO public.matchweek (match_no, mw, date, location, result, home_id, away_id) VALUES (341, 35, '03/05/2025 17:30', 'Emirates Stadium', '1 - 2', 1, 3);
 INSERT INTO public.matchweek (match_no, mw, date, location, result, home_id, away_id) VALUES (132, 14, '04/12/2024 20:15', 'Villa Park', '3 - 1', 2, 4);

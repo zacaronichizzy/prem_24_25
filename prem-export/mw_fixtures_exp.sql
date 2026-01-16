@@ -1,3 +1,24 @@
+CREATE TABLE IF NOT EXISTS mw_fixtures (
+    fixture_id INTEGER PRIMARY KEY,
+    referee VARCHAR,
+    home_score INTEGER,
+    away_score INTEGER,
+    home_id INTEGER,
+    away_id INTEGER,
+    fixture_time TIMESTAMP,
+    mw INTEGER
+);
+
+ALTER TABLE mw_fixtures
+    ADD CONSTRAINT fk_home_id
+        FOREIGN KEY (home_id) REFERENCES teams (team_id),
+    ADD CONSTRAINT fk_away_id
+        FOREIGN KEY (away_id) REFERENCES teams (team_id);
+
+ALTER TABLE mw_fixtures
+    ALTER COLUMN home_id SET NOT NULL,
+    ALTER COLUMN away_id SET NOT NULL;
+
 INSERT INTO public.mw_fixtures (fixture_id, referee, home_score, away_score, home_id, away_id, fixture_time, mw) VALUES (14706, 'Chris Kavanagh', 2, 2, 1, 2, '2025-01-18 17:30:00.000000', 22);
 INSERT INTO public.mw_fixtures (fixture_id, referee, home_score, away_score, home_id, away_id, fixture_time, mw) VALUES (14575, 'Jarred Gillett', 1, 2, 1, 3, '2025-05-03 17:30:00.000000', 35);
 INSERT INTO public.mw_fixtures (fixture_id, referee, home_score, away_score, home_id, away_id, fixture_time, mw) VALUES (14606, 'Simon Hooper', 1, 1, 1, 4, '2025-04-12 17:30:00.000000', 32);
