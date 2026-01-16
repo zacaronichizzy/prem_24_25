@@ -3,9 +3,5 @@
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/queries/prem_raw_data.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/queries/prem_table_24_25.sql" dialect="PostgreSQL" />
-    <file url="file://$USER_HOME$/Downloads/prem_data/fixtures_exp.sql" dialect="PostgreSQL" />
-    <file url="file://$USER_HOME$/Downloads/prem_data/matchweek_exp.sql" dialect="PostgreSQL" />
-    <file url="file://$USER_HOME$/Downloads/prem_data/mw_fixtures_exp.sql" dialect="PostgreSQL" />
-    <file url="file://$USER_HOME$/Downloads/prem_data/teams_exp.sql" dialect="PostgreSQL" />
   </component>
 </project>
